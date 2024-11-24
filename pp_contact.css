@@ -1,0 +1,26 @@
+#main {
+    background-color: rgb(17, 42, 153);
+    padding: 60px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input#Submit {
+    background-color: green;
+    color: white;
+    border: green 5px solid;
+    margin: auto;
+    padding: 5px;
+}
+
+a {
+    color: white;
+}

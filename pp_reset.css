@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/* Structural Styles */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+/* Typographic Styles */
+address,
+article,
+aside,
+blockquote,
+body,
+cite,
+div,
+dl,
+dt,
+dd,
+em,
+figcaption,
+figure,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+img,
+li,
+main,
+nav,
+ol,
+p,
+section,
+span,
+ul {
+  background: transparent;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+  background-color: lightskyblue;
+}
+
+body {
+  /* background-color: #2656be; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  min-width: 640px;
+  max-width: 1680px;
+  line-height: 1;
+}
+
+body>header>img {
+  display: block;
+  width: 100%;
+}
+
+section#container {
+  background-color: rgb(17, 42, 153);
+  display: flex;
+  padding: 10px;
+  margin: auto;
+}
+
+section#leftColumn {
+  float: left;
+  /* background-color: #2656be; */
+  width: 30%;
+  padding: 15px;
+}
+
+section#rightColumn {
+  float: left;
+  /* background-color: #2656be; */
+  width: 70%;
+  padding: 15px;
+}
+
+nav.horizontalNavigation>ul>li {
+  float: left;
+  background-color: rgb(21, 31, 83);
+  width: 20%;
+  border: 1px white solid;
+}
+
+nav img {
+  height: 250px
+}
+
+nav ul {
+  list-style: none;
+  list-style-image: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgb(21, 31, 83);
+  
+}
+
+#home {
+  display: flex;
+}
+
+footer::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+footer>nav.verticalNavigation, #contactInfo {
+  float: left;
+  width: 25%;
+}
+
+@media (max-width: 750px) {
+  nav.horizontalNavigation>ul>li {
+      font-size: 0.8em;
+  }
+}
